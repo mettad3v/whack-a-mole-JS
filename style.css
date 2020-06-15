@@ -1,0 +1,67 @@
+body{
+    background: #333;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#start-menu{
+    border: 1px dashed blue;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(38, 54, 17);
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+}
+#gameover{
+    border: 1px dashed red;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(38, 54, 17);
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    display: none;
+}
+#gameover h1{
+    margin-top: 250px;
+}
+.content{
+    font-family: cursive;
+    margin-top: 200px;
+
+}
+.content select{
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    background: midnightblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.left{
+    position: fixed;
+    text-align: center;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+}
+.grid{
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 618px;
+    height: 618px;    
+}
+
+.mole{
+    background-image: url('mole.jpg');
+    background-size: cover;
+}

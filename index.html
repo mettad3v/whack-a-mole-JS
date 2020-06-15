@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whack a mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-menu">
+        <div class="content">
+            <h1>WHACK-A-MOLE</h1>
+            <p>version 0.001 &copy; Metta</p> <br><br>
+            <span>Set difficulty: </span>
+            <select name="selection" id="selection">
+                <option value="Baby" name="Baby">Baby</option>
+                <option value="Bold" name="Bold">Bold</option>
+                <option value="ro-Bot" name="ro-Bot">Robot</option>
+            </select>
+            <br>
+            <br><br><br>
+            <button id="start" class="btn">Start Game</button>
+        </div>
+    </div>
+
+        <di id="gameover">
+            <h1>Game Over! Final score is</h1>
+            <h2 id="scoreBoard"></h2>
+            <button class="btn" onclick="restart()">Restart?</button>
+        </di>
+        
+    <div class="left">  
+        
+        <h2>Your score</h2>
+        <h2 id="score">0</h2>
+        
+        <h2>Seconds left:</h2>
+        <h2 id="time-left">3</h2>
+    </div>
+
+    <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square mole" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>
+</body>
+<script src="app.js" charset="utf-8"></script>
+</html>
